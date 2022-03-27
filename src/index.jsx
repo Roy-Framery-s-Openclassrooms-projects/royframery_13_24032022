@@ -1,10 +1,18 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import { BrowserRouter as Router } from 'react-router-dom'
+// Components
+import Header from './components/Header'
+// CSS
 import './index.scss'
 import reportWebVitals from './reportWebVitals'
 
 ReactDOM.render(
-    <React.StrictMode></React.StrictMode>,
+    <React.StrictMode>
+        <Router>
+            <Header />
+        </Router>
+    </React.StrictMode>,
     document.getElementById('root')
 )
 
