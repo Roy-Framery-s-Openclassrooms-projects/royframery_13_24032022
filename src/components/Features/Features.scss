@@ -1,0 +1,7 @@
+@use '../../utils/sass/breakpoints' as *;
+
+.features {
+    @include media-query(large) {
+        display: flex;
+    }
+}

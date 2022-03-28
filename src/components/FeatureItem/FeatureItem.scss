@@ -1,0 +1,31 @@
+@use '../../utils/sass/colors' as *;
+@use '../../utils/sass/breakpoints' as *;
+
+.feature {
+    padding: 2.5rem;
+
+    @include media-query(large) {
+        flex: 1;
+    }
+
+    &__img {
+        width: 100px;
+        border: 10px solid $color-primary;
+        border-radius: 50%;
+        padding: 1rem;
+        box-sizing: content-box;
+    }
+
+    &__title {
+        color: $black;
+        font-size: 1.25rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+        margin-top: 1em;
+    }
+
+    &__text {
+        color: $color-secondary;
+        margin: 1em 0;
+    }
+}
