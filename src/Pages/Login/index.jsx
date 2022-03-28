@@ -1,10 +1,12 @@
 // CSS
-import './SignIn.scss'
+import './Login.scss'
+// Components
+import SignInCard from '../../components/SignInCard'
 
 const SignIn = () => {
     return (
         <main className="signIn">
-            <p>je suis la page sign-in</p>
+            <SignInCard />
         </main>
     )
 }

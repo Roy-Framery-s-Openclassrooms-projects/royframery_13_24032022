@@ -19,7 +19,7 @@ const Header = () => {
                 <HeaderItem
                     icon="fa fa-user-circle"
                     text="Sign In"
-                    path="/sign-in"
+                    path="/login"
                 />
             </nav>
         </header>
