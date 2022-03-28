@@ -6,16 +6,16 @@ const SignInForm = () => {
     return (
         <form action="" className="form">
             <div className="form__input-wrapper">
-                <label for="username">Username</label>
+                <label htmlFor="username">Username</label>
                 <input type="text" name="username" id="username" />
             </div>
             <div className="form__input-wrapper">
-                <label for="password">Password</label>
+                <label htmlFor="password">Password</label>
                 <input type="text" name="password" id="password" />
             </div>
             <div className="form__input-remember">
-                <input type="checkbox" name="remeberMe" id="rememberMe" />
-                <label for="rememberMe">Remember me</label>
+                <input type="checkbox" name="rememberMe" id="rememberMe" />
+                <label htmlFor="rememberMe">Remember me</label>
             </div>
             <Link to="/profile" className="form__button">
                 Sign In
