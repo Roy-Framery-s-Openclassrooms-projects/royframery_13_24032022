@@ -1,5 +1,9 @@
 @use './utils/sass/reset';
 
+html {
+    display: flex;
+}
+
 body {
     margin: 0;
     font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -7,6 +11,9 @@ body {
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
     min-height: 100vh;
 }
 
@@ -14,7 +21,7 @@ code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
         monospace;
 }
-
 #root {
     padding-bottom: 76px;
+    height: 100%;
 }
