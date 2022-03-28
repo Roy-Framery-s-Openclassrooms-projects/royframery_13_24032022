@@ -1,6 +1,7 @@
 @use '../../utils/sass/colors' as *;
 
 .profile {
+    flex: 1;
     background-color: $dark-blue;
     height: 100%;
 }

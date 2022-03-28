@@ -1,10 +1,12 @@
+// Components
+import HeaderProfile from '../../components/HeaderProfile'
 // CSS
 import './Profile.scss'
 
 const Profile = () => {
     return (
         <main className="profile">
-            <div className="profile__header"> Welcome back</div>
+            <HeaderProfile />
         </main>
     )
 }

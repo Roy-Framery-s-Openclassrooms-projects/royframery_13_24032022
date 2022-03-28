@@ -1,0 +1,22 @@
+@use '../../utils/sass/colors' as *;
+
+.headerProfile {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 2rem;
+    color: $white;
+
+    &__title {
+        font-size: 2em;
+        margin: 0.67em 0;
+        font-weight: bold;
+    }
+
+    &__edit-button {
+        border-color: $color-primary;
+        background-color: $color-primary;
+        color: $white;
+        font-weight: bold;
+        padding: 10px;
+    }
+}
