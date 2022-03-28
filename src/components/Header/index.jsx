@@ -16,7 +16,11 @@ const Header = () => {
                     />
                     <h1 className="sr-only">Argent Bank</h1>
                 </Link>
-                <HeaderItem icon="fa fa-user-circle" text="Sign In" />
+                <HeaderItem
+                    icon="fa fa-user-circle"
+                    text="Sign In"
+                    path="/sign-in"
+                />
             </nav>
         </header>
     )

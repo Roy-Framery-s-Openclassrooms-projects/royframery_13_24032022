@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 // Pages
 import Home from './Pages/Home'
+import SignIn from './Pages/SignIn'
 // Components
 import Header from './components/Header'
 import Footer from './components/Footer'
@@ -16,6 +17,7 @@ ReactDOM.render(
             <Header />
             <Routes>
                 <Route path="/" element={<Home />} />
+                <Route path="/sign-in" element={<SignIn />} />
             </Routes>
             <Footer />
         </Router>
