@@ -3,10 +3,13 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        height: 64px;
         padding: 5px 20px;
     }
 
     &__logo {
+        display: flex;
+        align-items: center;
         max-width: 100%;
         width: 200px;
     }

@@ -1,0 +1,53 @@
+@use '../../utils/sass/colors' as *;
+@use '../../utils/sass/breakpoints' as *;
+
+.hero {
+    position: relative;
+    background-image: url('../../../public/bank-tree.jpeg');
+    background-position: 0 -50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+
+    @include media-query(large) {
+        height: 400px;
+        background-position: 0% 33%;
+    }
+
+    &__content {
+        position: relative;
+        top: 2rem;
+        width: 200px;
+        background: $white;
+        padding: 2rem;
+        margin: 0 auto;
+        text-align: left;
+        color: $color-primary;
+        box-sizing: content-box;
+
+        @include media-query(large) {
+            position: absolute;
+            top: 50px;
+            right: 50px;
+            width: 300px;
+            margin: 2rem;
+        }
+
+        &-subtitle {
+            font-weight: bold;
+            font-size: 1rem;
+
+            @include media-query(large) {
+                font-size: 1.5rem;
+            }
+        }
+
+        &-text {
+            margin-top: 1em;
+            font-size: 0.9rem;
+            @include media-query(large) {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
