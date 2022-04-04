@@ -13,10 +13,11 @@
     }
 
     &__edit-button {
-        border-color: $color-primary;
+        padding: 10px;
         background-color: $color-primary;
         color: $white;
         font-weight: bold;
-        padding: 10px;
+        border-color: $color-primary;
+        cursor: pointer;
     }
 }

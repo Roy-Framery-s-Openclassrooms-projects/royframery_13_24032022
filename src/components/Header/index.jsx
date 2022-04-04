@@ -5,6 +5,9 @@ import HeaderItem from '../HeaderItem'
 import './Header.scss'
 
 const Header = () => {
+    const pathname = window.location.pathname
+    const isProfile = pathname === '/profile'
+
     return (
         <header className="header">
             <nav className="header__nav">
@@ -16,11 +19,26 @@ const Header = () => {
                     />
                     <h1 className="sr-only">Argent Bank</h1>
                 </Link>
-                <HeaderItem
-                    icon="fa fa-user-circle"
-                    text="Sign In"
-                    path="/login"
-                />
+                {isProfile ? (
+                    <div className="header__items">
+                        <HeaderItem
+                            icon="fa fa-user-circle"
+                            text="Tony"
+                            path="/profile"
+                        />
+                        <HeaderItem
+                            icon="fa fa-sign-out"
+                            text="Sign Out"
+                            path="/"
+                        />
+                    </div>
+                ) : (
+                    <HeaderItem
+                        icon="fa fa-user-circle"
+                        text="Sign In"
+                        path="/login"
+                    />
+                )}
             </nav>
         </header>
     )
