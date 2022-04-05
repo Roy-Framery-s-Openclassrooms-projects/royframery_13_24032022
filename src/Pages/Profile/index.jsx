@@ -5,6 +5,7 @@ import Account from '../../components/Account'
 import './Profile.scss'
 
 const Profile = () => {
+    document.title = 'Argent Bank - Profile'
     return (
         <main className="profile">
             <HeaderProfile />

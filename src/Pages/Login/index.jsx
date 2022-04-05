@@ -4,6 +4,7 @@ import './Login.scss'
 import SignInCard from '../../components/SignInCard'
 
 const SignIn = () => {
+    document.title = 'Argent Bank - Sign In'
     return (
         <main className="signIn">
             <SignInCard />
