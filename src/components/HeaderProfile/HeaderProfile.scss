@@ -12,12 +12,53 @@
         font-weight: bold;
     }
 
-    &__edit-button {
+    &__edit-button, &__save-button {
         padding: 10px;
         background-color: $color-primary;
         color: $white;
         font-weight: bold;
         border-color: $color-primary;
         cursor: pointer;
+    }
+
+    &__editForm {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        &-inputs {
+            display: flex;
+            gap: 20px;
+        }
+        &-formGroup input {
+            height: 40px;
+            width: 200px;
+            padding: 10px;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        &-buttons {
+            display: flex;
+            gap: 20px;
+        }
+        &-save {
+            width: 100px;
+            padding: 5px;
+            background-color: $color-primary;
+            color: $white;
+            font-weight: bold;
+            border-color: $color-primary;
+            cursor: pointer;    
+        }
+        &-cancel {
+            width: 100px;
+            padding: 5px;
+            background-color: $white;
+            color: $color-primary;
+            font-weight: bold;
+            border-color: $white;
+            cursor: pointer;
+        }
     }
 }

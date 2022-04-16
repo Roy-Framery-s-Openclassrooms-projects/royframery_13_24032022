@@ -1,5 +1,18 @@
 @use '../../utils/sass/colors' as *;
 .form {
+    &::after {
+        content: attr(data-error);
+        font-size: 14px;
+        font-weight: normal;
+        color: #e54858;
+        display: block;
+        margin-top: 7px;
+        margin-bottom: 7px;
+        text-align: start;
+        line-height: 1;
+        opacity: 1;
+    }
+
     &__input {
         &-wrapper {
             display: flex;

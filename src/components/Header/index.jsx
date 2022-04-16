@@ -1,12 +1,16 @@
 import { Link } from 'react-router-dom'
+import { useSelector } from 'react-redux'
 // Components
 import HeaderItem from '../HeaderItem'
 // CSS
 import './Header.scss'
+// selectors
+import { selectConnected, selectUserFirstName } from '../../utils/selectors'
 
 const Header = () => {
-    const pathname = window.location.pathname
-    const isProfile = pathname === '/profile'
+    const isRemembered = localStorage.getItem('token')
+    const isConnected = useSelector(selectConnected)
+    const firstname = useSelector(selectUserFirstName)
 
     return (
         <header className="header">
@@ -19,11 +23,11 @@ const Header = () => {
                     />
                     <h1 className="sr-only">Argent Bank</h1>
                 </Link>
-                {isProfile ? (
+                {isRemembered || isConnected ? (
                     <div className="header__items">
                         <HeaderItem
                             icon="fa fa-user-circle"
-                            text="Tony"
+                            text={firstname}
                             path="/profile"
                         />
                         <HeaderItem
