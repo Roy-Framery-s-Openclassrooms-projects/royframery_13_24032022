@@ -4,7 +4,7 @@
 ![Redux](https://img.shields.io/badge/React_Redux-7.2.8-764ABC?style=for-the-badge&logo=Redux)
 # ARGENTBANK
 
-![SportSee logo](public/readMe/logo.png)
+![ArgentBank logo](public/readMe/logo.png)
 
 _**ARGENTBANK**_ is a fresh new bank trying to break into the industry and wants to implement her app. In that way, two phases have been set up :
 
@@ -27,7 +27,7 @@ _**ARGENTBANK**_ is a fresh new bank trying to break into the industry and wants
 
 ## Installation 💽
 
-###  `Clone project`
+`Clone project`
  ```bash
  git clone https://github.com/Roy-Framery-s-Openclassrooms-projects/royframery_13_24032022.git
  ```
@@ -37,17 +37,19 @@ _**ARGENTBANK**_ is a fresh new bank trying to break into the industry and wants
 
 ## Usage 💻
 
-### `install Back-End first`
+### install Back-End first
 
-Follow the [ReadMe](https://github.com/Roy-Framery-s-Openclassrooms-projects/royframery_13_24032022/blob/main/back/README.md) in back folder !
+Follow this [ReadMe](https://github.com/Roy-Framery-s-Openclassrooms-projects/royframery_13_24032022/blob/main/back/README.md) !
 
 
-### `install Front-End`
+### install Front-End
 
+`Install dependencies`
 ```bash
 npm i
 ```
-Launch front server :
+
+`Launch front server`
 ```bash
 npm start
 ```
