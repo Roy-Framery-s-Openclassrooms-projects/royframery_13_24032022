@@ -3,6 +3,11 @@ import SignInForm from '../SignInForm'
 // CSS
 import './SignInCard.scss'
 
+/**
+ *
+ * @description Component that show a signIn card
+ * @returns {HTMLElement}
+ */
 const SignInCard = () => {
     return (
         <section className="signInCard">

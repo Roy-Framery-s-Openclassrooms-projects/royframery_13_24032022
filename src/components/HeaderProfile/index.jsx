@@ -12,6 +12,11 @@ import {
 // CSS
 import './HeaderProfile.scss'
 
+/**
+ * @description Component that show the welcome message on profile page
+ * @returns { HTMLElement }
+ */
+
 const HeaderProfile = () => {
     const userFirstName = useSelector(selectUserFirstName)
     const userLastName = useSelector(selectUserLastName)
@@ -22,8 +27,12 @@ const HeaderProfile = () => {
     const token = useSelector(selectToken) || localStorage.getItem('token')
     const dispatch = useDispatch()
 
-    const save = (e) => {
-        e.preventDefault()
+    /**
+     * @description handle the modifications made by user on his firstname and lastname
+     * @param {object} event to get informations about the action
+     */
+    const save = (event) => {
+        event.preventDefault()
         dispatch(editName(token, firstName, lastName))
 
         if (status === 'resolved') {

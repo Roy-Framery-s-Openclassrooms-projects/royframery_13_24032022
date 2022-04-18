@@ -1,3 +1,4 @@
+// mocked data for features on home page
 const dataFeatures = [
     {
         image: 'icon-chat.png',

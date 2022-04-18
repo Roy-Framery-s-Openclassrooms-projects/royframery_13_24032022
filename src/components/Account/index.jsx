@@ -1,6 +1,10 @@
 // css
 import './Account.scss'
 
+/**
+ * @description Component that show an account
+ * @returns { HTMLElement }
+ */
 const Account = () => {
     return (
         <section className="account">

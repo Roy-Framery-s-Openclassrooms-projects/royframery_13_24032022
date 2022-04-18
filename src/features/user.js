@@ -12,6 +12,12 @@ const initialState = {
 }
 
 // thunk
+/**
+ *
+ * @description thunk creator that handle the token retrieval after the log in
+ * @param {string} username - username retrieve in the log In form
+ * @param {string} password - password retrieve in the log In form
+ */
 export const getToken = (username, password) => {
     return async (dispatch, getState) => {
         const status = selectUser(getState()).status
@@ -47,6 +53,12 @@ export const getToken = (username, password) => {
     }
 }
 
+/**
+ *
+ * @description thunk creator that handle the recovery of the user's information
+ * @param {string} token - token that get the user after the log in
+ * @returns
+ */
 export const getProfile = (token) => {
     return async (dispatch, getState) => {
         const status = selectUser(getState()).status
@@ -82,6 +94,14 @@ export const getProfile = (token) => {
         }
     }
 }
+
+/**
+ *
+ * @description thunk creator that handle the modification of the user's lastname and firstname
+ * @param {string} token - token that get the user after the log in
+ * @param {string} firstName - firstName retrieve in the edit name form
+ * @param {string} lastName - lastName retrieve in the edit name form
+ */
 
 export const editName = (token, firstName, lastName) => {
     return async (dispatch, getState) => {

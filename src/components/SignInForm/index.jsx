@@ -8,6 +8,11 @@ import { selectStatus, selectError, selectToken } from '../../utils/selectors'
 // CSS
 import './SignInForm.scss'
 
+/**
+ *
+ * @description Component that show a form
+ * @returns {HTMLElement}
+ */
 const SignInForm = () => {
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
@@ -19,6 +24,11 @@ const SignInForm = () => {
     const error = useSelector(selectError)
     const token = useSelector(selectToken)
 
+    /**
+     *
+     * @description Function that handle the log In event
+     * @param {object} event to get informations about the action
+     */
     const Login = (event) => {
         event.preventDefault()
         dispatch(getToken(username, password))

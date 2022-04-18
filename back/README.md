@@ -1,4 +1,4 @@
-# Project #10 - Argent Bank API
+# Argent Bank API
 
 This codebase contains the code needed to run the backend for Argent Bank.
 
@@ -8,34 +8,36 @@ This codebase contains the code needed to run the backend for Argent Bank.
 
 Argent Bank uses the following tech stack:
 
-- [Node.js v12](https://nodejs.org/en/)
 - [MongoDB Community Server](https://www.mongodb.com/try/download/community)
+  
+  > This [tutorial](https://www.youtube.com/watch?v=lKKUJ4xyxXI) helped me to install mongoDB !
 
-Please make sure you have the right versions and download both packages. You can verify this by using the following commands in your terminal:
+Please make sure you have the right version. You can verify this by using the following command in your terminal:
 
+`Check Mongo version`
 ```bash
-# Check Node.js version
-node --version
-
-# Check Mongo version
 mongo --version
 ```
 
 ### Instructions
 
-1. Fork this repo
-1. Clone the repo onto your computer
-1. Open a terminal window in the cloned project
-1. Run the following commands:
-
+`Change directories`
 ```bash
-# Install dependencies
+cd back/
+```
+
+`install dependencies`
+```bash
 npm install
+```
 
-# Start local dev server
+`Launch server`
+```bash
 npm run dev:server
+```
 
-# Populate database with two users
+`And populate data base` 
+```bash
 npm run populate-db
 ```
 
@@ -62,11 +64,3 @@ Once you run the `populate-db` script, you should have two users in your databas
 ## API Documentation
 
 To learn more about how the API works, once you have started your local environment, you can visit: http://localhost:3001/api-docs
-
-## Design Assets
-
-Static HTML and CSS has been created for most of the site and is located in: `/designs`.
-
-For some of the dynamic features, like toggling user editing, there is a mock-up for it in `/designs/wireframes/edit-user-name.png`.
-
-And for the API model that you will be proposing for transactitons, the wireframe can be found in `/designs/wireframes/transactions.png`.

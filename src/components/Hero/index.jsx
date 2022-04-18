@@ -1,5 +1,11 @@
 // CSS
 import './Hero.scss'
+
+/**
+ *
+ * @description Component that show a hero
+ * @returns {HTMLElement}
+ */
 const Hero = () => {
     return (
         <div className="hero">

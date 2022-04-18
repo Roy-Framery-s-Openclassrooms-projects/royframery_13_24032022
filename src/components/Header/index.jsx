@@ -7,6 +7,11 @@ import './Header.scss'
 // selectors
 import { selectConnected, selectUserFirstName } from '../../utils/selectors'
 
+/**
+ * @description Component that show the header
+ * @returns { HTMLElement }
+ */
+
 const Header = () => {
     const isRemembered = localStorage.getItem('token')
     const isConnected = useSelector(selectConnected)

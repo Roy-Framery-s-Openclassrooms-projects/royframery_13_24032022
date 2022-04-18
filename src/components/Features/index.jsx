@@ -5,6 +5,10 @@ import dataFeatures from '../../utils/dataFeatures'
 // CSS
 import './Features.scss'
 
+/**
+ * @description Component that show all the features
+ * @returns { HTMLElement }
+ */
 const Features = () => {
     return (
         <section className="features">

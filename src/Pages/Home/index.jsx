@@ -14,6 +14,7 @@ const Home = () => {
             dispatch(getProfile(token))
         }
     }, [dispatch])
+
     return (
         <main className="home">
             <Hero />

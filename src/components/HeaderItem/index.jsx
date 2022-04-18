@@ -6,13 +6,26 @@ import { logOut } from '../../features/user'
 // Css
 import './HeaderItem.scss'
 
+/**
+ *
+ * @description Component that show a header item
+ * @param  {string} icon - the path of the icon : classname="./icon.svg"
+ * @param  {string} text - text of the headerItem
+ * @param  {string} path - the path for the attribut : to="/path"
+ * @returns {HTMLElement }
+ */
 const HeaderItem = ({ icon, text, path }) => {
     const dispatch = useDispatch()
     const isLogOutButton = text === 'Sign Out'
     const navigate = useNavigate()
 
-    const handdleLogOut = (e) => {
-        e.preventDefault()
+    /**
+     *
+     * @description function that handle the log out
+     * @param  {object} event - to get informations about the action
+     */
+    const handdleLogOut = (event) => {
+        event.preventDefault()
         dispatch(logOut())
         localStorage.clear()
         navigate('/')

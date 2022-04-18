@@ -3,6 +3,10 @@ import './Footer.scss'
 
 const actuelDate = new Date().getFullYear()
 
+/**
+ * @description Component that show the footer
+ * @returns { HTMLElement }
+ */
 const Footer = () => {
     return (
         <footer className="footer">

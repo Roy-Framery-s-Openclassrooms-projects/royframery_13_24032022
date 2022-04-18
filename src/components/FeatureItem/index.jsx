@@ -2,6 +2,10 @@ import PropTypes from 'prop-types'
 // CSS
 import './FeatureItem.scss'
 
+/**
+ * @description Component that show a feature item
+ * @returns { HTMLElement }
+ */
 const FeatureItem = ({ image, title, text }) => {
     return (
         <div className="feature">
