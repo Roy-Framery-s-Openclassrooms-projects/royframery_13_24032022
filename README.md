@@ -10,7 +10,7 @@ _**ARGENTBANK**_ is a fresh new bank trying to break into the industry and wants
 
 - **Phase 1 : User authentication** 
   
-    The goal here was to transform a static HTML and CSS mock up in a React responsive application. For this purpose, it was requested to use react as state manager and respect a number of [issues]() to achieve this.
+    The goal here was to transform a static HTML and CSS mock up in a React responsive application. For this purpose, it was requested to use react as state manager and respect a number of [issues](https://github.com/Roy-Framery-s-Openclassrooms-projects/royframery_13_24032022/tree/main/.github/ISSUE_TEMPLATE) to achieve this.
 
 - **Phase 2 : transactions** 
     We are here in a conception phase of a new feature which can allow to users to view all their transactions for the current month, the details of a transaction in another view and to add, modify or delete information about a transaction. 
@@ -39,7 +39,7 @@ _**ARGENTBANK**_ is a fresh new bank trying to break into the industry and wants
 
 ### `install Back-End first`
 
-Follow the [ReadMe]() in back folder !
+Follow the [ReadMe](https://github.com/Roy-Framery-s-Openclassrooms-projects/royframery_13_24032022/blob/main/back/README.md) in back folder !
 
 
 ### `install Front-End`
