@@ -131,7 +131,6 @@ export const editName = (token, firstName, lastName) => {
             )
             if (response.ok) {
                 const data = await response.json()
-                console.log(data)
                 const firstName = data.body.firstName
                 const lastName = data.body.lastName
                 dispatch(actions.resolvedEditName(firstName, lastName))

@@ -22,8 +22,6 @@ const HeaderProfile = () => {
     const userLastName = useSelector(selectUserLastName)
     const status = useSelector(selectStatus)
     const [isEditForm, setForm] = useState(false)
-    const [firstName, setFirstName] = useState(userFirstName)
-    const [lastName, setLastName] = useState(userLastName)
     const token = useSelector(selectToken) || localStorage.getItem('token')
     const dispatch = useDispatch()
 
@@ -33,6 +31,8 @@ const HeaderProfile = () => {
      */
     const save = (event) => {
         event.preventDefault()
+        const firstName = document.querySelector('#firstName').value
+        const lastName = document.querySelector('#lastName').value
         dispatch(editName(token, firstName, lastName))
 
         if (status === 'resolved') {
@@ -57,10 +57,7 @@ const HeaderProfile = () => {
                                 type="text"
                                 name="firstName"
                                 id="firstName"
-                                placeholder={userFirstName}
-                                onChange={(e) =>
-                                    setFirstName(e.target.value.trim())
-                                }
+                                defaultValue={userFirstName}
                             />
                         </div>
                         <div className="headerProfile__editForm-formGroup">
@@ -71,10 +68,7 @@ const HeaderProfile = () => {
                                 type="text"
                                 name="lastName"
                                 id="lastName"
-                                placeholder={userLastName}
-                                onChange={(e) =>
-                                    setLastName(e.target.value.trim())
-                                }
+                                defaultValue={userLastName}
                             />
                         </div>
                     </div>
